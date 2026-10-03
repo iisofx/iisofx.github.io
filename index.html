@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — MFA Match Analyzer</title>
 <meta name="description" content="Privacy policy for MFA Match Analyzer by Sofx (Mentality First Academy).">
+<script>
+  // an account email's link that lands here (sign-up confirmed, or its link expired) goes on to the account page;
+  // the link's own tokens are not passed along or read
+  (function () {
+    var h = location.hash + location.search;
+    if (/access_token=|type=signup|type=recovery|[?&]code=|error=|error_code=/.test(h)) {
+      location.replace("/confirmed/" + (/error/.test(h) ? "?expired=1" : ""));
+    }
+  })();
+</script>
 <style>
   /* no web fonts, scripts or trackers: the page itself collects nothing */
   :root { --page:#0c0912; --card:#17111f; --ink:#ece7e3; --muted:#a79fb3; --gold:#ebad1d; --line:#2a2133; }
