@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>تم تأكيد الإيميل — MFA Match Analyzer</title>
 <style>
-  /* nothing loaded from anywhere, no scripts: the link's tokens in the address are never read or kept */
+  /* nothing loaded from anywhere; the one small script below only checks whether the link failed */
+  [hidden] { display: none !important; }
   :root { --page:#0c0912; --card:#17111f; --ink:#ece7e3; --muted:#a79fb3; --gold:#ebad1d; --line:#2a2133; }
   * { box-sizing: border-box; }
   html, body { height: 100%; }
@@ -22,7 +23,7 @@
 </style>
 </head>
 <body>
-  <div class="card">
+  <div class="card" id="ok">
     <div class="tick">✓</div>
     <h1>تم تأكيد الإيميل</h1>
     <p>ارجع للبرنامج وسجّل دخولك.</p>
@@ -32,5 +33,22 @@
     </div>
     <div class="brand">MFA Match Analyzer</div>
   </div>
+  <div class="card" id="expired" hidden>
+    <div class="tick" style="background:rgba(255,107,107,.14); color:#ff6b6b;">!</div>
+    <h1>الرابط انتهى أو انستخدم</h1>
+    <p>إذا سجّلت دخولك عادي فحسابك مؤكد. وإذا لا، ارجع للبرنامج واضغط «أعد إرسال رابط التأكيد».</p>
+    <div class="en">
+      <h1>This link has expired or was used</h1>
+      <p>If you can sign in, your account is confirmed. If not, go back to the app and press "Send the confirmation link again".</p>
+    </div>
+    <div class="brand">MFA Match Analyzer</div>
+  </div>
+  <script>
+    // only whether the link failed is read from the address; nothing else in it is used or kept
+    if (/error|expired=1/.test(location.hash + location.search)) {
+      document.getElementById("ok").hidden = true;
+      document.getElementById("expired").hidden = false;
+    }
+  </script>
 </body>
 </html>
