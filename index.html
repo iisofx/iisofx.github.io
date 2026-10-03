@@ -6,7 +6,7 @@
 <title>Privacy Policy — MFA Match Analyzer</title>
 <meta name="description" content="Privacy policy for MFA Match Analyzer by Sofx (Mentality First Academy).">
 <style>
-  /* no web fonts, scripts or trackers: the page itself collects nothing either */
+  /* no web fonts, scripts or trackers: the page itself collects nothing */
   :root { --page:#0c0912; --card:#17111f; --ink:#ece7e3; --muted:#a79fb3; --gold:#ebad1d; --line:#2a2133; }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--page); color:var(--ink); font:16px/1.65 "Segoe UI", Tahoma, Arial, sans-serif; }
@@ -23,9 +23,7 @@
   ul { margin:6px 0; padding-inline-start:22px; }
   li { margin:4px 0; }
   .date { color:var(--muted); font-size:.92rem; margin-bottom:12px; }
-  .lead { font-weight:700; font-size:1.06rem; }
   a { color:var(--gold); }
-  [dir="rtl"] { font-family:"Segoe UI", Tahoma, Arial, sans-serif; }
   footer { color:var(--muted); font-size:.88rem; text-align:center; }
 </style>
 </head>
@@ -39,68 +37,112 @@
 
   <section id="en" lang="en">
     <h2>Privacy Policy — MFA Match Analyzer</h2>
-    <p class="date">Last updated: October 2, 2026</p>
-    <p>MFA Match Analyzer ("the app") is made by Sofx (Mentality First Academy). This policy explains what the app does with your information.</p>
+    <p class="date">Last updated: October 3, 2026</p>
+    <p>MFA Match Analyzer ("the app") is made by Sofx (Mentality First Academy). This policy explains what information the app uses, why, and what stays only on your PC.</p>
 
-    <h3>We do not collect your data.</h3>
-    <p>The app has no accounts, no ads, no analytics and no tracking. We do not receive, store or sell any information about you or your use of the app.</p>
-
-    <h3>What stays on your PC</h3>
+    <h3>Your account and license</h3>
+    <p>To use the app you create an account and enter a license key. For that, we keep:</p>
     <ul>
-      <li>Your analyses and reports are saved in your Documents folder (Documents\CDL-Analyzer).</li>
-      <li>Your settings, and the app's error logs, are saved in your Windows user profile. They are never sent anywhere.</li>
+      <li><b>Your email address</b>, and your password <b>stored only as a one-way hash</b> — nobody, including us, can read your password.</li>
+      <li><b>The license key</b> linked to your account: which features it opens, its analysis limit and its expiry date.</li>
+      <li><b>Your PCs:</b> a random identifier the app creates on each PC, and the PC's name (for example "DESKTOP-1234"), so the key works only on the number of PCs it allows.</li>
+      <li><b>Your analysis count:</b> for each analysis, the time it was made and its game mode (for example Hardpoint) — to apply your key's limit.</li>
+      <li><b>When you last signed in and when the app last checked in</b> (the app checks your key with our server about every 30 seconds while it's open, which is why it needs the internet).</li>
+    </ul>
+    <p>We use this only to run your account and license. We do not sell it, share it for advertising, or use it to track you. The app has no ads and no analytics.</p>
+
+    <h3>What never leaves your PC</h3>
+    <ul>
+      <li>The videos and links you analyse, and everything read from them.</li>
+      <li>Your analyses and reports (saved in Documents\CDL-Analyzer), player names and match statistics.</li>
+      <li>Your settings and the app's error logs.</li>
+    </ul>
+    <p>The server only learns that an analysis was made — never what was analysed.</p>
+
+    <h3>Services we use</h3>
+    <ul>
+      <li><b>Supabase</b> (servers in the EU, Frankfurt) keeps your account and license data.</li>
+      <li><b>Brevo</b> sends the account emails (confirming your email address, resetting your password).</li>
     </ul>
 
-    <h3>What the app connects to, and only when you ask it to</h3>
+    <h3>What the app connects to, only when you ask it to</h3>
     <ul>
       <li><b>Video sites:</b> when you paste a link (for example YouTube or Twitch), the app streams that video from the site to analyse it on your PC, the same way a video player would.</li>
-      <li><b>Twitch (optional):</b> if you choose to sign in to Twitch to read higher-quality videos, you sign in on Twitch's own page. The app never sees your password. It keeps the session Twitch gives it on your PC, encrypted with Windows' protection for your user account, and sends it only to Twitch. Signing out deletes it.</li>
-      <li><b>Netlify (optional):</b> if you choose to create a shareable link for a report, the app uploads that report to your own Netlify account using a key you enter. The key is kept encrypted on your PC. Anyone with the link can view that report, which can include player names and match statistics from the video.</li>
+      <li><b>Twitch (optional):</b> if you sign in to Twitch for higher-quality videos, you sign in on Twitch's own page and the app never sees your password. It keeps the session Twitch gives it on your PC, encrypted for your Windows account, and sends it only to Twitch. Signing out deletes it.</li>
+      <li><b>Netlify (optional):</b> if you create a shareable link for a report, the app uploads that report to your own Netlify account with a key you enter (kept encrypted on your PC). Anyone with the link can view that report, which can include player names and match statistics.</li>
       <li><b>Fonts:</b> reports opened in a browser load their fonts from Google Fonts.</li>
     </ul>
     <p>Those services handle the connection under their own privacy policies.</p>
 
+    <h3>On your PC</h3>
+    <p>Your sign-in session is kept on your PC, encrypted for your Windows account. Signing out removes it.</p>
+
+    <h3>How long we keep it, and deleting it</h3>
+    <p>Your account data is kept while your account exists. To delete your account and its data, email us from the address on your account; we delete it and confirm. Analyses and reports on your PC are yours to delete at any time.</p>
+
     <h3>Children</h3>
-    <p>The app is not directed at children under 13 and collects no information from anyone.</p>
+    <p>The app is not directed at children under 13, and we do not knowingly hold data from them.</p>
 
     <h3>Changes</h3>
     <p>If this policy changes, the new version will be published at this address with a new date.</p>
 
     <h3>Contact</h3>
-    <p><a href="mailto:ahmedsofx@hotmail.com">ahmedsofx@hotmail.com</a></p>
+    <p>Email: <a href="mailto:ahmedsofx@hotmail.com">ahmedsofx@hotmail.com</a> · X (Twitter): <a href="https://x.com/iSofx_">@iSofx_</a></p>
   </section>
 
   <section id="ar" lang="ar" dir="rtl">
     <h2>سياسة الخصوصية — محلل المباريات من MFA</h2>
-    <p class="date">آخر تحديث: 2 أكتوبر 2026</p>
-    <p>محلل المباريات ("البرنامج") من تطوير Sofx (Mentality First Academy). هذي السياسة توضح وش يسوي البرنامج بمعلوماتك.</p>
+    <p class="date">آخر تحديث: 3 أكتوبر 2026</p>
+    <p>محلل المباريات ("البرنامج") من تطوير Sofx (Mentality First Academy). هذي السياسة توضح وش المعلومات اللي يستخدمها البرنامج، وليش، ووش اللي يبقى على جهازك بس.</p>
 
-    <h3>ما نجمع بياناتك.</h3>
-    <p>البرنامج ما فيه حسابات ولا إعلانات ولا إحصائيات استخدام ولا تتبع. ما نستقبل ولا نحفظ ولا نبيع أي معلومة عنك أو عن استخدامك للبرنامج.</p>
-
-    <h3>وش يبقى على جهازك</h3>
+    <h3>حسابك ومفتاح التفعيل</h3>
+    <p>عشان تستخدم البرنامج تسوي حساب وتدخل مفتاح تفعيل. ولهذا نحفظ:</p>
     <ul>
-      <li>تحليلاتك وتقاريرك تنحفظ في مجلد المستندات (<bdi>Documents\CDL-Analyzer</bdi>).</li>
-      <li>إعداداتك وسجلات الأخطاء تنحفظ في ملف مستخدم ويندوز حقك، وما تنرسل لأي مكان.</li>
+      <li><b>إيميلك</b>، وكلمة السر <b>محفوظة بتشفير ما ينفك</b> — ما أحد يقدر يقرأ كلمة السر، حتى نحن.</li>
+      <li><b>مفتاح التفعيل</b> المربوط بحسابك: الميزات اللي يفتحها، وحد التحليلات، وتاريخ انتهائه.</li>
+      <li><b>أجهزتك:</b> رقم عشوائي يسويه البرنامج لكل جهاز، واسم الجهاز (مثل <bdi>DESKTOP-1234</bdi>)، عشان المفتاح يشتغل على عدد الأجهزة المسموح بس.</li>
+      <li><b>عدد تحليلاتك:</b> لكل تحليل وقته ونوع المود (مثل <bdi>Hardpoint</bdi>) — عشان نطبّق حد المفتاح.</li>
+      <li><b>آخر دخول وآخر تواصل للبرنامج</b> (البرنامج يتأكد من مفتاحك مع السيرفر تقريباً كل 30 ثانية وهو مفتوح، وعشان كذا يحتاج الإنترنت).</li>
+    </ul>
+    <p>نستخدم هذا بس لتشغيل حسابك ومفتاحك. ما نبيعه، ولا نشاركه للإعلانات، ولا نستخدمه لتتبعك. البرنامج ما فيه إعلانات ولا إحصائيات استخدام.</p>
+
+    <h3>وش ما يطلع من جهازك أبداً</h3>
+    <ul>
+      <li>المقاطع والروابط اللي تحللها، وكل شيء ينقرأ منها.</li>
+      <li>تحليلاتك وتقاريرك (في مجلد <bdi>Documents\CDL-Analyzer</bdi>)، وأسماء اللاعبين وإحصائيات المباريات.</li>
+      <li>إعداداتك وسجلات الأخطاء.</li>
+    </ul>
+    <p>السيرفر يعرف بس إن فيه تحليل انسوى — أبداً ما يعرف وش انحلل.</p>
+
+    <h3>الخدمات اللي نستخدمها</h3>
+    <ul>
+      <li><b><bdi>Supabase</bdi></b> (سيرفرات في أوروبا، فرانكفورت) تحفظ بيانات حسابك ومفتاحك.</li>
+      <li><b><bdi>Brevo</bdi></b> ترسل إيميلات الحساب (تأكيد الإيميل، وتغيير كلمة السر).</li>
     </ul>
 
     <h3>وش يتصل فيه البرنامج، وبس لما تطلب أنت</h3>
     <ul>
       <li><b>مواقع الفيديو:</b> لما تلصق رابط (مثل يوتيوب أو تويتش)، البرنامج يشغّل المقطع من الموقع ويحلله على جهازك، مثل أي مشغل فيديو.</li>
-      <li><b>تويتش (اختياري):</b> إذا اخترت تسجّل دخول تويتش عشان جودة أعلى، تسجّل من صفحة تويتش نفسها، والبرنامج ما يشوف كلمة السر أبداً. يحفظ الجلسة اللي يعطيها تويتش على جهازك، مشفرة بحماية ويندوز لحسابك، وما يرسلها إلا لتويتش. تسجيل الخروج يحذفها.</li>
-      <li><b><bdi>Netlify</bdi> (اختياري):</b> إذا اخترت تسوي رابط مشاركة لتقرير، البرنامج يرفع التقرير لحسابك أنت في <bdi>Netlify</bdi> باستخدام مفتاح تدخله أنت، والمفتاح محفوظ مشفر على جهازك. أي أحد معه الرابط يقدر يشوف التقرير، واللي ممكن يكون فيه أسماء اللاعبين وإحصائيات المباراة من المقطع.</li>
+      <li><b>تويتش (اختياري):</b> إذا سجّلت دخول تويتش عشان جودة أعلى، تسجّل من صفحة تويتش نفسها والبرنامج ما يشوف كلمة السر. يحفظ الجلسة اللي يعطيها تويتش على جهازك، مشفرة لحساب ويندوز حقك، وما يرسلها إلا لتويتش. تسجيل الخروج يحذفها.</li>
+      <li><b><bdi>Netlify</bdi> (اختياري):</b> إذا سويت رابط مشاركة لتقرير، البرنامج يرفع التقرير لحسابك أنت في <bdi>Netlify</bdi> بمفتاح تدخله أنت (محفوظ مشفر على جهازك). أي أحد معه الرابط يقدر يشوف التقرير، واللي ممكن يكون فيه أسماء اللاعبين وإحصائيات المباراة.</li>
       <li><b>الخطوط:</b> التقارير لما تنفتح في المتصفح تحمّل خطوطها من <bdi>Google Fonts</bdi>.</li>
     </ul>
     <p>هذي الخدمات تتعامل مع الاتصال حسب سياسات الخصوصية حقتها.</p>
 
+    <h3>على جهازك</h3>
+    <p>جلسة دخولك محفوظة على جهازك، مشفرة لحساب ويندوز حقك. تسجيل الخروج يحذفها.</p>
+
+    <h3>مدة الحفظ وحذف البيانات</h3>
+    <p>بيانات حسابك تبقى ما دام حسابك موجود. إذا تبي تحذف حسابك وبياناته، راسلنا من نفس الإيميل المسجّل، ونحذفها ونأكد لك. التحليلات والتقارير اللي على جهازك حقتك، وتحذفها متى ما تبي.</p>
+
     <h3>الأطفال</h3>
-    <p>البرنامج مو موجّه للأطفال تحت 13 سنة، وما يجمع معلومات من أي أحد.</p>
+    <p>البرنامج مو موجّه للأطفال تحت 13 سنة، وما نحفظ بيانات منهم عن قصد.</p>
 
     <h3>التغييرات</h3>
     <p>إذا تغيرت هذي السياسة، تنشر النسخة الجديدة على نفس الرابط مع تاريخ جديد.</p>
 
     <h3>التواصل</h3>
-    <p><a href="mailto:ahmedsofx@hotmail.com"><bdi>ahmedsofx@hotmail.com</bdi></a></p>
+    <p>الإيميل: <a href="mailto:ahmedsofx@hotmail.com"><bdi>ahmedsofx@hotmail.com</bdi></a> · إكس (تويتر): <a href="https://x.com/iSofx_"><bdi>@iSofx_</bdi></a></p>
   </section>
 
   <footer>© 2026 Sofx — Mentality First Academy</footer>
